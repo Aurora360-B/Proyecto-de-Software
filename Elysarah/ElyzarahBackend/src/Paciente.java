@@ -1,4 +1,3 @@
-package ElyzarahBackend.src;
 
 public class Paciente {
 
@@ -14,9 +13,10 @@ public class Paciente {
 
     public Paciente() {}
 
-    public Paciente(int idPaciente, String tipoDocumento, String numeroDocumento, String nombres, String apellidos,
-            String telefono, String correo, String direccion, String eps) {
-        this.idPaciente = idPaciente;
+    
+
+    public Paciente(String tipoDocumento, String numeroDocumento, String nombres, String apellidos, String telefono,
+            String correo, String direccion, String eps) {
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
         this.nombres = nombres;
@@ -26,6 +26,7 @@ public class Paciente {
         this.direccion = direccion;
         this.eps = eps;
     }
+
 
     public int getIdPaciente() {
         return idPaciente;

@@ -1,4 +1,3 @@
-package ElyzarahBackend.src;
 
 public class Medico {
     private int id_medico;
@@ -12,10 +11,9 @@ public class Medico {
     public Medico (){
 
     }
-
-    public Medico(int id_medico, String nombres, String apellidos, String telefono, int numero_licencia, String correo,
+    
+    public Medico(String nombres, String apellidos, String telefono, int numero_licencia, String correo,
             int id_especialidad) {
-        this.id_medico = id_medico;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.telefono = telefono;
@@ -23,6 +21,7 @@ public class Medico {
         this.correo = correo;
         this.id_especialidad = id_especialidad;
     }
+
 
     public int getId_medico() {
         return id_medico;

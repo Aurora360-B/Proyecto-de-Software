@@ -1,4 +1,3 @@
-package ElyzarahBackend.src;
 
 import java.sql.Date;
 import java.sql.Time;
@@ -19,9 +18,9 @@ private int idCita;
 
     }
 
-    public Cita(int idCita, int idPaciente, int idMedico, int idConsultorio, Date fecha, Time horaInicio, Time horaFin,
+
+    public Cita(int idPaciente, int idMedico, int idConsultorio, Date fecha, Time horaInicio, Time horaFin,
             String motivoConsulta, String estado) {
-        this.idCita = idCita;
         this.idPaciente = idPaciente;
         this.idMedico = idMedico;
         this.idConsultorio = idConsultorio;
@@ -31,6 +30,7 @@ private int idCita;
         this.motivoConsulta = motivoConsulta;
         this.estado = estado;
     }
+
 
     public int getIdCita() {
         return idCita;
